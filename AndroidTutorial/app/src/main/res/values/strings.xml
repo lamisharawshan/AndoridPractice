@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="lamisha_rawshan">Lamisha Rawshan!</string>
+    <string name="push_me">Push me</string>
+    <string name="push_me1">push_me1</string>
+    <string name="dia_phone">Dia Phone</string>
+    <string name="toast">toast</string>
+    <string name="showmelocation">Showmelocation</string>
+    <string name="gotowebpage">gotowebpage</string>
+</resources>
