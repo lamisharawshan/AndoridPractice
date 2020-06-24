@@ -7,4 +7,5 @@
     <string name="toast">toast</string>
     <string name="showmelocation">Showmelocation</string>
     <string name="gotowebpage">gotowebpage</string>
+    <string name="welcome_to_other_application">Welcome to other Application</string>
 </resources>

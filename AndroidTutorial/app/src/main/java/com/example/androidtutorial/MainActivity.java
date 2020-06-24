@@ -2,6 +2,8 @@ package com.example.androidtutorial;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -47,19 +49,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
 
             case R.id.DialPhone:
-                Log.d("tag", "some body push me");
-                textview.setText("hello edureka push me");
+                Intent intent1=new Intent(Intent.ACTION_DIAL, Uri.parse("tel:'0219323923"));
+                startActivity(intent1);
                 break;
             case R.id.Toast:
-                Log.d("tag", "some body push me 2");
-                textview.setText("hello edureka push me1");
+                Intent intent=new Intent(MainActivity.this,OtherActivity.class);
+                startActivity(intent);
                 break;
             case R.id.Showmelocation:
-
+                Intent intent2=new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/"));
+                startActivity(intent2);
                 break;
             case R.id.gotowebpage:
-                Log.d("tag", "some body push me 2");
-                textview.setText("hello edureka push me1");
+                Intent intent3=new Intent(Intent.ACTION_VIEW);
+                intent3.putExtra("KEY","this is extra");
+                startActivity(intent3);
                 break;
 
 
